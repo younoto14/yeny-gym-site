@@ -1,7 +1,7 @@
-public/admin/config.yml
+backend:
 backend:
   name: github
-  repo: your-username/your-repo-name # Change this to your GitHub path
+  repo: younoto14/yeny-gym-site # Change this to your GitHub path
   branch: main # or master
 
 media_folder: "public/images" # Where images will be saved
