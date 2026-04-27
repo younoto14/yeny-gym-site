@@ -1,17 +1,16 @@
 backend:
-backend:
   name: github
-  repo: younoto14/yeny-gym-site # Change this to your GitHub path
-  branch: main # or master
+  repo: younoto14/yeny-gym-site
+  branch: main
 
-media_folder: "public/images" # Where images will be saved
+media_folder: "public/images"
 public_folder: "/images"
 
 collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "content/home.json" # You will move your text to this file
+      - file: "content/home.json"
         label: "Home Page"
         name: "home"
         fields:
