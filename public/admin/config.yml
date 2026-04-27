@@ -3,6 +3,8 @@ backend:
   repo: younoto14/yeny-gym-site
   branch: main
 
+site_url: https://your-vercel-domain.vercel.app
+
 media_folder: "public/images"
 public_folder: "/images"
 
