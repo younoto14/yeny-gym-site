@@ -4,3 +4,18 @@ backend:
   branch: main
   base_url: https://yeny-gym-site.vercel.app
   auth_endpoint: api/auth
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/home.json"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: "Hero Title", name: "title", widget: "string"}
+          - {label: "Hero Subtitle", name: "subtitle", widget: "text"}
+          - {label: "Background Image", name: "image", widget: "image"}
