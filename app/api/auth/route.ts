@@ -18,24 +18,33 @@ export async function GET(request: Request) {
   });
 
   const data = await res.json();
+  const token = data.access_token;
 
-  // This script tells the popup window to send the token back to your main site
+  // This specific script is what Decap CMS looks for to close the popup
   const content = `
+    <!DOCTYPE html>
     <html>
-      <body>
-        <script>
-          const token = "${data.access_token}";
-          if (token) {
-            window.opener.postMessage(
-              'authorization:github:success:{"token":"' + token + '","provider":"github"}',
-              window.location.origin
-            );
-          } else {
-            window.opener.postMessage("authorization:github:error:User denied access", window.location.origin);
+    <body>
+      <script>
+        (function() {
+          function receiveMessage(e) {
+            console.log("Authorized");
           }
-        </script>
-        <p>Logging you in... you can close this window if it doesn't close automatically.</p>
-      </body>
+          window.addEventListener("message", receiveMessage, false);
+          
+          const response = {
+            token: "${token}",
+            provider: "github"
+          };
+          
+          window.opener.postMessage(
+            'authorization:github:success:' + JSON.stringify(response),
+            window.location.origin
+          );
+        })();
+      </script>
+      <p>Authentication successful! Closing window...</p>
+    </body>
     </html>
   `;
 
