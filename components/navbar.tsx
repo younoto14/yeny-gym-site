@@ -54,7 +54,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-muted-foreground hover:text-[#FF5F00] transition-colors duration-200"
+                className="text-sm font-medium text-muted-foreground hover:text-[#FFF8F0] transition-colors duration-200"
               >
                 {link.label}
               </Link>
@@ -72,7 +72,7 @@ export function Navbar() {
             </a>
             <Button
               asChild
-              className="bg-[#FF5F00] hover:bg-[#FF5F00]/90 text-black font-semibold"
+              className="bg-[#F5ECD7] hover:bg-[#F5ECD7]/90 text-black font-semibold"
             >
               <Link href="#pricing">Join Now</Link>
             </Button>
@@ -100,7 +100,7 @@ export function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-base font-medium text-muted-foreground hover:text-[#FF5F00] transition-colors py-2"
+                  className="text-base font-medium text-muted-foreground hover:text-[#FFF8F0] transition-colors py-2"
                 >
                   {link.label}
                 </Link>
@@ -114,7 +114,7 @@ export function Navbar() {
               </a>
               <Button
                 asChild
-                className="bg-[#FF5F00] hover:bg-[#FF5F00]/90 text-black font-semibold w-full mt-2"
+                className="bg-[#F5ECD7] hover:bg-[#F5ECD7]/90 text-black font-semibold w-full mt-2"
               >
                 <Link href="#pricing">Join Now</Link>
               </Button>

@@ -18,6 +18,7 @@ const facilities = [
       "Comprehensive selection of dumbbells, barbells, and plate-loaded machines for serious strength training.",
     features: ["Olympic Platforms", "Power Racks", "Competition Benches"],
     highlight: false,
+    badge: null,
   },
   {
     icon: Heart,
@@ -26,6 +27,7 @@ const facilities = [
       "State-of-the-art treadmills, ellipticals, rowing machines, and bikes with personal entertainment systems.",
     features: ["Smart Equipment", "Heart Rate Monitoring", "Virtual Trails"],
     highlight: false,
+    badge: null,
   },
   {
     icon: Music,
@@ -34,6 +36,7 @@ const facilities = [
       "Dedicated studio space with premium flooring and sound system for group fitness classes.",
     features: ["Daily Classes", "Expert Instructors", "All Levels"],
     highlight: false,
+    badge: null,
   },
   {
     icon: Sparkles,
@@ -42,6 +45,7 @@ const facilities = [
       "Fully equipped Pilates studio with reformers and specialized equipment for core strengthening.",
     features: ["Reformer Machines", "Mat Classes", "Private Sessions"],
     highlight: false,
+    badge: null,
   },
   {
     icon: Users,
@@ -50,7 +54,7 @@ const facilities = [
       "Exclusive women-only training area with dedicated equipment and private atmosphere.",
     features: ["Women Only", "Private Space", "Personal Trainers"],
     highlight: true,
-    badge: "Women&apos;s Area",
+    badge: "Women's Area",
   },
   {
     icon: Flame,
@@ -76,13 +80,12 @@ export function FacilitiesSection() {
   return (
     <section id="facilities" className="py-16 sm:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <span className="text-[#FF5F00] font-semibold text-sm tracking-widest uppercase">
+          <span className="text-[#FFF8F0] font-semibold text-sm tracking-widest uppercase">
             Our Facilities
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-6 text-balance">
-            World-Class <span className="text-[#FF5F00]">Equipment</span> &
+            World-Class <span className="text-[#FFF8F0]">Equipment</span> &amp;
             Spaces
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
@@ -91,24 +94,23 @@ export function FacilitiesSection() {
           </p>
         </div>
 
-        {/* Facilities Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {facilities.map((facility) => (
             <Card
               key={facility.title}
-              className={`bg-card border-border hover:border-[#FF5F00]/50 transition-all duration-300 group ${
-                facility.highlight ? "ring-1 ring-[#FF5F00]/20" : ""
+              className={`bg-card border-border hover:border-[#FFF8F0]/50 transition-all duration-300 group ${
+                facility.highlight ? "ring-1 ring-[#FFF8F0]/20" : ""
               }`}
             >
               <CardHeader>
                 <div className="flex items-start justify-between">
-                  <div className="w-14 h-14 bg-[#FF5F00]/10 rounded-xl flex items-center justify-center group-hover:bg-[#FF5F00]/20 transition-colors">
-                    <facility.icon className="w-7 h-7 text-[#FF5F00]" />
+                  <div className="w-14 h-14 bg-[#FFF8F0]/10 rounded-xl flex items-center justify-center group-hover:bg-[#FFF8F0]/20 transition-colors">
+                    <facility.icon className="w-7 h-7 text-[#FFF8F0]" />
                   </div>
                   {facility.badge && (
                     <Badge
                       variant="outline"
-                      className="border-[#FF5F00]/50 text-[#FF5F00]"
+                      className="border-[#FFF8F0]/50 text-[#FFF8F0]"
                     >
                       {facility.badge}
                     </Badge>

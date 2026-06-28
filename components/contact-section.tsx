@@ -52,11 +52,11 @@ export function ContactSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <span className="text-[#FF5F00] font-semibold text-sm tracking-widest uppercase">
+          <span className="text-[#FFF8F0] font-semibold text-sm tracking-widest uppercase">
             Get In Touch
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-6 text-balance">
-            Start Your <span className="text-[#FF5F00]">Journey</span> Today
+            Start Your <span className="text-[#FFF8F0]">Journey</span> Today
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Have questions? Want to book a tour? Reach out to us and our team
@@ -131,7 +131,7 @@ export function ContactSection() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-[#FF5F00] hover:bg-[#FF5F00]/90 text-black font-semibold"
+                    className="w-full bg-[#F5ECD7] hover:bg-[#F5ECD7]/90 text-black font-semibold"
                   >
                     <Send className="w-4 h-4 mr-2" />
                     Send Message
@@ -158,7 +158,7 @@ export function ContactSection() {
                   className="absolute inset-0"
                 />
                 {/* Overlay for styling */}
-                <div className="absolute inset-0 bg-[#FF5F00]/10 pointer-events-none" />
+                <div className="absolute inset-0 bg-[#FFF8F0]/5 pointer-events-none" />
               </div>
             </Card>
 
@@ -167,8 +167,8 @@ export function ContactSection() {
               {contactInfo.map((info) => (
                 <Card key={info.title} className="bg-card border-border">
                   <CardContent className="p-4 flex items-start gap-4">
-                    <div className="w-12 h-12 bg-[#FF5F00]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <info.icon className="w-6 h-6 text-[#FF5F00]" />
+                    <div className="w-12 h-12 bg-[#FFF8F0]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <info.icon className="w-6 h-6 text-[#FFF8F0]" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">
@@ -179,7 +179,7 @@ export function ContactSection() {
                           <a
                             key={idx}
                             href={info.link}
-                            className="text-sm text-muted-foreground hover:text-[#FF5F00] transition-colors block"
+                            className="text-sm text-muted-foreground hover:text-[#FFF8F0] transition-colors block"
                           >
                             {detail}
                           </a>

@@ -43,19 +43,19 @@ export function Footer() {
             <div className="flex gap-4">
               <a
                 href="#"
-                className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center text-muted-foreground hover:bg-[#FF5F00] hover:text-black transition-colors"
+                className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center text-muted-foreground hover:bg-[#F5ECD7] hover:text-black transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center text-muted-foreground hover:bg-[#FF5F00] hover:text-black transition-colors"
+                className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center text-muted-foreground hover:bg-[#F5ECD7] hover:text-black transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center text-muted-foreground hover:bg-[#FF5F00] hover:text-black transition-colors"
+                className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center text-muted-foreground hover:bg-[#F5ECD7] hover:text-black transition-colors"
               >
                 <Youtube className="w-5 h-5" />
               </a>
@@ -70,7 +70,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-muted-foreground hover:text-[#FF5F00] transition-colors"
+                    className="text-sm text-muted-foreground hover:text-[#FFF8F0] transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -98,23 +98,23 @@ export function Footer() {
             <h4 className="font-semibold text-foreground mb-6">Contact</h4>
             <ul className="space-y-4">
               <li className="flex gap-3">
-                <MapPin className="w-5 h-5 text-[#FF5F00] flex-shrink-0 mt-0.5" />
+                <MapPin className="w-5 h-5 text-[#FFF8F0] flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-muted-foreground">
                   Adnan Kahveci Mah., Yavuz Sultan Selim Blv. No:45,
                   Beylikduzu/Istanbul
                 </span>
               </li>
               <li className="flex gap-3">
-                <Phone className="w-5 h-5 text-[#FF5F00] flex-shrink-0" />
+                <Phone className="w-5 h-5 text-[#FFF8F0] flex-shrink-0" />
                 <a
                   href="tel:+905330853943"
-                  className="text-sm text-muted-foreground hover:text-[#FF5F00] transition-colors"
+                  className="text-sm text-muted-foreground hover:text-[#FFF8F0] transition-colors"
                 >
                   +90 533 085 39 43
                 </a>
               </li>
               <li className="flex gap-3">
-                <Clock className="w-5 h-5 text-[#FF5F00] flex-shrink-0" />
+                <Clock className="w-5 h-5 text-[#FFF8F0] flex-shrink-0" />
                 <div className="text-sm text-muted-foreground">
                   <p>Weekdays: 7:00 AM - 11:00 PM</p>
                   <p>Weekends: 10:00 AM - 10:00 PM</p>
